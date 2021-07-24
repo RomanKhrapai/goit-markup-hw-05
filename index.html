@@ -56,7 +56,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button class="hero-button" type="button">Заказать услугу</button>
+                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="section">
@@ -111,11 +111,14 @@
                 <h2 class="career-title">Чем мы занимаемся</h2>
                 <ul class="career">
                     <li class="career-item"><img src="./images/photo_1.jpg" class="career-img" alt="набор кода"
-                            width="370"></li>
+                            width="370">
+                        <p class="career-text">Десктопные приложения</p></li>
                     <li class="career-item"><img src="./images/photo_2.jpg" class="career-img"
-                            alt="настройка дизайна для телефона" width="370"></li>
+                            alt="настройка дизайна для телефона" width="370">
+                        <p class="career-text">Мобильные приложения</p></li>
                     <li class="career-item"><img src="./images/photo_3.jpg" class="career-img"
-                            alt="вибор цветов с палитри" width="370"></li>
+                            alt="вибор цветов с палитри" width="370">
+                        <p class="career-text">Дизайнерские решения</p></li>
                 </ul>
             </div>
         </section>
@@ -309,7 +312,16 @@
         </div>
         </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+<div class="modal">
+    <button class="modal-button" data-modal-close>
+        <svg class="modal-icon" height="18px" width="18px">
+            <use href="./images/icons.svg#icon-close "></use>
+        </svg>
+    </button>
+</div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
